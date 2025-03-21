@@ -9,7 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="crawling.jpeg" />
     <None Remove="minas.teste.jpg" />
+    <None Remove="OIP.jpeg" />
+    <None Remove="OIP_8.jpeg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,7 +20,6 @@
     <Folder Include="MVVM\Model\Concrete\" />
     <Folder Include="MVVM\ViewModel\" />
     <Folder Include="Resource\" />
-    <Folder Include="Theme\" />
     <Folder Include="MVVM\View\" />
   </ItemGroup>
 
@@ -30,7 +32,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="crawling.jpeg" />
     <Resource Include="Imagens\minas.teste.jpg" />
+    <Resource Include="minas.teste.jpg" />
+    <Resource Include="OIP.jpeg" />
+    <Resource Include="OIP_8.jpeg" />
   </ItemGroup>
 
 </Project>

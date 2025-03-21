@@ -1,0 +1,84 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TesteApp"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml" x:Class="TesteApp.Supervisorio"
+        mc:Ignorable="d"
+        Title="Supervisorio" Height="450" Width="800" 
+        WindowState="Maximized" 
+        ResizeMode="NoResize" 
+        WindowStyle="None"
+        Background ="Transparent"
+        AllowsTransparency="True">
+    <Border Background= "#f4ecdd" >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="127"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Image Margin="0,3,0,3" Source="/minas.teste.jpg" Stretch="Fill"  />
+            <TextBlock Grid.Column="1" Margin="103,10,139,63" TextAlignment="Center" Background="#FFE47C34" TextWrapping="Wrap" FontFamily="Century Schoolbook" VerticalAlignment="Bottom"><Run Language="pt-br" Text="SUPERVISÓRIO SK4"/></TextBlock>
+            <TextBlock Grid.Column="1" Height="22" Margin="46,95,450,10" TextWrapping="Wrap" Width="104"><Run Language="pt-br" Text="USUÁRIO: "/></TextBlock>
+            <TextBlock Grid.Column="1" Height="21" Margin="344,95,139,11" TextWrapping="Wrap" Width="117" RenderTransformOrigin="0.374,-0.143"><Run Language="pt-br" Text="DATA E HORA:"/></TextBlock>
+            <DataGrid Grid.Column="1" Height="21" Margin="129,95,338,11" Width="133" d:ItemsSource="{d:SampleData ItemCount=5}" Background="Black"/>
+            <StackPanel Margin="10,10,10,10" Grid.Row="1">
+                <RadioButton
+                    Content="Configuração"
+                    Foreground="Black"
+                    FontSize="14"
+                    Height="50"
+                    Style="{StaticResource Tema_menu_b}"
+                    IsChecked="True"
+                    Command="{Binding HomeViewCommand}"
+                    />
+                <RadioButton
+                    Content="Conexão"
+                    Foreground="Black"
+                    FontSize="14"
+                    Height="50"
+                    Style="{StaticResource Tema_menu_b}"
+                    Command="{Binding DiscoveryViewCommand}"
+                    />
+                <RadioButton
+                    Content="Banco de dados"
+                    Foreground="Black"
+                    FontSize="14"
+                    Height="50"
+                    Style="{StaticResource Tema_menu_b}"
+                    />
+                <RadioButton
+                Content="Tutorial"
+                 Foreground="Black"
+                FontSize="14"
+                Height="50"
+                Style="{StaticResource Tema_menu_b}"/>
+            </StackPanel>
+            <ui:Image Grid.Column="1" Height="55" Margin="46,43,450,225" Grid.Row="1" Width="104" IsHitTestVisible="False" Focusable="False" IsTabStop="False"/>
+            <ui:Image Grid.Column="1" Height="55" Margin="248,43,248,225" Grid.Row="1" Width="104" d:LayoutOverrides="HorizontalAlignment"/>
+            <ui:Image Grid.Column="1" Height="55" Margin="443,43,53,225" Grid.Row="1" Width="104"/>
+            <ui:Image Grid.Column="1" Height="55" Margin="46,161,450,106" Grid.Row="1" Width="104" d:LayoutOverrides="VerticalAlignment"/>
+            <ui:Image Grid.Column="1" Height="55" Margin="248,161,248,106" Grid.Row="1" Width="104" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+            <ui:Image Grid.Column="1" Height="55" Margin="443,161,53,106" Grid.Row="1" Width="104" d:LayoutOverrides="VerticalAlignment" Background="Gray" Foreground="Gray">
+                <ui:Image.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="Gray" Offset="1"/>
+                    </LinearGradientBrush>
+                </ui:Image.BorderBrush>
+                <ui:Image.OpacityMask>
+                    <ImageBrush ImageSource="/OIP_8.jpeg"/>
+                </ui:Image.OpacityMask>
+            </ui:Image>
+        </Grid>
+    </Border>
+
+</Window>
