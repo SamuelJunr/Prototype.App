@@ -1,0 +1,19 @@
+﻿<Window x:Class="TesteApp.Inicio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:local="clr-namespace:TesteApp"
+        mc:Ignorable="d"
+        WindowStyle ="SingleBorderWindow"
+        Title="Supervisório SK4" 
+        Height="600" Width="800"
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="/Imagens/minas.teste.jpg" Stretch="Fill"/>
+    </Window.Background>
+   
+    <Button Content="Entrar" Margin="0,472,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.921,-0.51" Background= "#848484" IsHitTestVisible="False" Focusable="False" IsTabStop="False" Height="77" Width="192" HorizontalAlignment="Center"/>
+</Window>

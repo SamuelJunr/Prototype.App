@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="minas.teste.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+    <Folder Include="MVVM\Model\Concrete\" />
+    <Folder Include="MVVM\ViewModel\" />
+    <Folder Include="Resource\" />
+    <Folder Include="Theme\" />
+    <Folder Include="MVVM\View\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ModernWpfUI" Version="0.9.6" />
+    <PackageReference Include="NScada" Version="0.0.3" />
+    <PackageReference Include="WPF-UI" Version="4.0.2" />
+    <PackageReference Include="WPF-UI-Enhanced" Version="10.0.0" />
+    <PackageReference Include="WPF-UI.Tray" Version="4.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Imagens\minas.teste.jpg" />
+  </ItemGroup>
+
+</Project>
